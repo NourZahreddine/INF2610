@@ -15,22 +15,23 @@
 
 void part21 ()
 {
-    //appel printf
-    char *messagePrint = "77dbcb01f572f1c32p196c3a7d27f62e (printed using printf)";
-    for (int i = 0; i< strlen(messagePrint);i++) {
-        printf("%c", messagePrint[i]);
-    }
-    printf("\n");
-
     // appel write 
     char *message = "77dbcb01f572f1c32p196c3a7d27f62e (printed using write)\n";
     write(STDOUT_FILENO, message, strlen(message)); 
+
+    //appel printf
+    char *messagePrint = "77dbcb01f572f1c32p196c3a7d27f62e (printed using printf)";
+    for (int i = 0; i< strlen(messagePrint); i++) {
+        printf("%c", messagePrint[i]);
+    }
 
 }
 
 void part22 ()
 {
-    setvbuf(stdout, NULL, _IONBF, 0);
+    if(setvbuf(stdout, NULL, _IONBF, 0) != 0) {
+        printf("setvbuf echoué\n");
+    };
     part21();
 }
 
