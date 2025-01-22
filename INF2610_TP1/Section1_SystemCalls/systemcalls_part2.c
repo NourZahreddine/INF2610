@@ -3,7 +3,8 @@
  * Hiver 2025
  * SystemCalls - part2.c
  *
- * Ajoutez vos noms, prénoms et matricules
+ * Abou-Saada Serena, 2270553
+ * Nour Zahreddine, 2167661
 */
 
 #include <stdio.h>
