@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/noni/Downloads/INF2610/INF2610_TP1/Section1_SystemCalls",
+      "program": "/Users/noni/Downloads/INF2610/INF2610_TP1/Section1_SystemCalls/build/Debug/outDebug"
+    }
+  ]
+}
