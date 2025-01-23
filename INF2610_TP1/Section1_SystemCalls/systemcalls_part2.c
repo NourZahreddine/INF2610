@@ -16,14 +16,14 @@
 void part21 ()
 {
     //appel printf
-    char *messagePrint = "77dbcb01f572f1c32p196c3a7d27f62e (printed using printf)";
-    for (int i = 0; messagePrint[i] != '\0'; i++) {
-        fprintf(stdout,"%c", messagePrint[i]);
+    char *messagePrintf = "77dbcb01f572f1c32p196c3a7d27f62e (printed using printf)";
+    for (int i = 0; messagePrintf[i] != '\0'; i++) {
+        fprintf(stdout,"%c", messagePrintf[i]);
     }
 
     // appel write 
-    char *message = "77dbcb01f572f1c32p196c3a7d27f62e (printed using write)\n";
-    write(STDOUT_FILENO, message, strlen(message));
+    char *messageWrite = "77dbcb01f572f1c32p196c3a7d27f62e (printed using write)\n";
+    write(STDOUT_FILENO, messageWrite, strlen(messageWrite));
 
     fprintf(stdout, "\n");
 }
